@@ -47,15 +47,8 @@ namespace JobApplicationTracker.WebApi.Controllers
                 return BadRequest(ModelState);
             }
 
-            try
-            {
-                await _service.UpdateJobApplicationAsync(id, updateDto);
-                return NoContent();
-            }
-            catch (KeyNotFoundException)
-            {
-                return NotFound();
-            }
+            await _service.UpdateJobApplicationAsync(id, updateDto);
+            return NoContent();
         }
 
         // POST: api/JobApplications
@@ -83,6 +76,14 @@ namespace JobApplicationTracker.WebApi.Controllers
             }
 
             return NoContent();
+        }
+
+        // GET: api/JobApplications/test-exception
+        // This endpoint is for testing the global exception handler
+        [HttpGet("test-exception")]
+        public IActionResult TestException()
+        {
+            throw new Exception("This is a test exception to verify global exception handling");
         }
     }
 }

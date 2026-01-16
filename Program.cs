@@ -1,4 +1,5 @@
 using JobApplicationTracker.WebApi.Data;
+using JobApplicationTracker.WebApi.Middleware;
 using JobApplicationTracker.WebApi.Repository;
 using JobApplicationTracker.WebApi.Service;
 using Microsoft.EntityFrameworkCore;
@@ -26,6 +27,9 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+// Global exception handling middleware NOTE: should be early in the pipeline
+app.UseMiddleware<GlobalExceptionHandlingMiddleware>();
 
 app.UseHttpsRedirection();
 
