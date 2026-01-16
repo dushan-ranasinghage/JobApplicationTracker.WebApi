@@ -69,16 +69,15 @@ namespace JobApplicationTracker.WebApi.Service
 
         private static JobApplicationDto MapToDto(JobApplication jobApplication)
         {
-            return new JobApplicationDto
-            {
-                Id = jobApplication.Id,
-                CompanyName = jobApplication.CompanyName,
-                Position = jobApplication.Position,
-                Status = jobApplication.Status,
-                DateApplied = jobApplication.DateApplied,
-                CreatedAt = jobApplication.CreatedAt,
-                UpdatedAt = jobApplication.UpdatedAt
-            };
+            return new JobApplicationDto(
+                Id: jobApplication.Id,
+                CompanyName: jobApplication.CompanyName,
+                Position: jobApplication.Position,
+                Status: jobApplication.Status,
+                DateApplied: jobApplication.DateApplied,
+                CreatedAt: jobApplication.CreatedAt,
+                UpdatedAt: jobApplication.UpdatedAt
+            );
         }
     }
 }

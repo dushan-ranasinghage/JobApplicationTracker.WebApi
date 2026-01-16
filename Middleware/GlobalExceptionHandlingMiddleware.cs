@@ -32,34 +32,48 @@ namespace JobApplicationTracker.WebApi.Middleware
         {
             context.Response.ContentType = "application/json";
 
-            var errorResponse = new ErrorResponseDto();
+            ErrorResponseDto errorResponse;
 
             if (exception is KeyNotFoundException)
             {
-                errorResponse.StatusCode = 404;
-                errorResponse.Message = exception.Message;
+                errorResponse = new ErrorResponseDto(
+                    Message: exception.Message,
+                    Details: null,
+                    StatusCode: 404,
+                    Timestamp: DateTime.UtcNow,
+                    Errors: null
+                );
             }
             else if (exception is ArgumentException || exception is ArgumentNullException)
             {
-                errorResponse.StatusCode = 400;
-                errorResponse.Message = exception.Message;
+                errorResponse = new ErrorResponseDto(
+                    Message: exception.Message,
+                    Details: null,
+                    StatusCode: 400,
+                    Timestamp: DateTime.UtcNow,
+                    Errors: null
+                );
             }
             else if (exception is DbUpdateException)
             {
-                errorResponse.StatusCode = 400;
-                errorResponse.Message = "Database error occurred";
-                errorResponse.Details = exception.InnerException?.Message;
+                errorResponse = new ErrorResponseDto(
+                    Message: "Database error occurred",
+                    Details: exception.InnerException?.Message,
+                    StatusCode: 400,
+                    Timestamp: DateTime.UtcNow,
+                    Errors: null
+                );
             }
             else
             {
-                errorResponse.StatusCode = 500;
-                errorResponse.Message = "An error occurred while processing your request";
-                
                 var env = context.RequestServices.GetService<IWebHostEnvironment>();
-                if (env != null && env.IsDevelopment())
-                {
-                    errorResponse.Details = exception.ToString();
-                }
+                errorResponse = new ErrorResponseDto(
+                    Message: "An error occurred while processing your request",
+                    Details: env != null && env.IsDevelopment() ? exception.ToString() : null,
+                    StatusCode: 500,
+                    Timestamp: DateTime.UtcNow,
+                    Errors: null
+                );
             }
 
             context.Response.StatusCode = errorResponse.StatusCode;
