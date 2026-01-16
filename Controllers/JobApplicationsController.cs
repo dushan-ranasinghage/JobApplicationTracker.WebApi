@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using JobApplicationTracker.WebApi.Models;
-using JobApplicationTracker.WebApi.Repository;
+using JobApplicationTracker.WebApi.Service;
 
 namespace JobApplicationTracker.WebApi.Controllers
 {
@@ -8,18 +8,18 @@ namespace JobApplicationTracker.WebApi.Controllers
     [ApiController]
     public class JobApplicationsController : ControllerBase
     {
-        private readonly IJobApplicationRepository _repository;
+        private readonly IJobApplicationService _service;
 
-        public JobApplicationsController(IJobApplicationRepository repository)
+        public JobApplicationsController(IJobApplicationService service)
         {
-            _repository = repository;
+            _service = service;
         }
 
         // GET: api/JobApplications
         [HttpGet]
         public async Task<ActionResult<IEnumerable<JobApplication>>> GetJobApplications()
         {
-            var jobApplications = await _repository.GetAllAsync();
+            var jobApplications = await _service.GetAllJobApplicationsAsync();
             return Ok(jobApplications);
         }
 
@@ -27,7 +27,7 @@ namespace JobApplicationTracker.WebApi.Controllers
         [HttpGet("{id}")]
         public async Task<ActionResult<JobApplication>> GetJobApplication(int id)
         {
-            var jobApplication = await _repository.GetByIdAsync(id);
+            var jobApplication = await _service.GetJobApplicationByIdAsync(id);
 
             if (jobApplication == null)
             {
@@ -47,14 +47,15 @@ namespace JobApplicationTracker.WebApi.Controllers
                 return BadRequest();
             }
 
-            var exists = await _repository.ExistsAsync(id);
-            if (!exists)
+            try
+            {
+                await _service.UpdateJobApplicationAsync(id, jobApplication);
+                return NoContent();
+            }
+            catch (KeyNotFoundException)
             {
                 return NotFound();
             }
-
-            await _repository.UpdateAsync(jobApplication);
-            return NoContent();
         }
 
         // POST: api/JobApplications
@@ -62,7 +63,7 @@ namespace JobApplicationTracker.WebApi.Controllers
         [HttpPost]
         public async Task<ActionResult<JobApplication>> PostJobApplication(JobApplication jobApplication)
         {
-            var created = await _repository.CreateAsync(jobApplication);
+            var created = await _service.CreateJobApplicationAsync(jobApplication);
             return CreatedAtAction("GetJobApplication", new { id = created.Id }, created);
         }
 
@@ -70,7 +71,7 @@ namespace JobApplicationTracker.WebApi.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteJobApplication(int id)
         {
-            var deleted = await _repository.DeleteAsync(id);
+            var deleted = await _service.DeleteJobApplicationAsync(id);
             if (!deleted)
             {
                 return NotFound();
