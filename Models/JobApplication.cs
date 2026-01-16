@@ -12,7 +12,7 @@ namespace JobApplicationTracker.WebApi.Models
         [Required, MaxLength(200)]
         public string Position { get; set; } = string.Empty;
 
-        [Required]
+        [EnumDataType(typeof(JobApplicationStatus))]
         public JobApplicationStatus Status { get; set; }
 
         [Required]
