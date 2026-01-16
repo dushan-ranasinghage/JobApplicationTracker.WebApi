@@ -1,0 +1,6 @@
+@JobApplicationTracker.WebApi_HostAddress = http://localhost:5069
+
+GET {{JobApplicationTracker.WebApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
