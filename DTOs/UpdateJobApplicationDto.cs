@@ -14,9 +14,6 @@ namespace JobApplicationTracker.WebApi.DTOs
 
         [Required(ErrorMessage = "Status is required")]
         [EnumDataType(typeof(JobApplicationStatus), ErrorMessage = "Invalid status value")]
-        JobApplicationStatus Status,
-
-        [Required(ErrorMessage = "Date applied is required")]
-        DateTime DateApplied
+        JobApplicationStatus Status
     );
 }

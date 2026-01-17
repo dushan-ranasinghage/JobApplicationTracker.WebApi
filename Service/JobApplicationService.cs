@@ -58,7 +58,7 @@ namespace JobApplicationTracker.WebApi.Service
                 CompanyName = createDto.CompanyName,
                 Position = createDto.Position,
                 Status = createDto.Status,
-                DateApplied = createDto.DateApplied
+                DateApplied = DateTime.UtcNow
             };
 
             var created = await _repository.CreateAsync(jobApplication);
@@ -82,7 +82,6 @@ namespace JobApplicationTracker.WebApi.Service
             existing.CompanyName = updateDto.CompanyName;
             existing.Position = updateDto.Position;
             existing.Status = updateDto.Status;
-            existing.DateApplied = updateDto.DateApplied;
 
             var updated = await _repository.UpdateAsync(existing);
             return MapToDto(updated);
