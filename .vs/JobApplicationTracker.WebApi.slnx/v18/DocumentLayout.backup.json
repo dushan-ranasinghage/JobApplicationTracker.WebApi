@@ -7,28 +7,28 @@
       "RelativeMoniker": "D:0:0:{6AB4161F-09C8-DC9D-5F9B-E052946445C1}|JobApplicationTracker.WebApi.csproj|solutionrelative:service\\jobapplicationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6AB4161F-09C8-DC9D-5F9B-E052946445C1}|JobApplicationTracker.WebApi.csproj|e:\\datacom\\jobapplicationtracker.webapi\\dtos\\createjobapplicationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6AB4161F-09C8-DC9D-5F9B-E052946445C1}|JobApplicationTracker.WebApi.csproj|solutionrelative:dtos\\createjobapplicationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6AB4161F-09C8-DC9D-5F9B-E052946445C1}|JobApplicationTracker.WebApi.csproj|e:\\datacom\\jobapplicationtracker.webapi\\controllers\\jobapplicationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6AB4161F-09C8-DC9D-5F9B-E052946445C1}|JobApplicationTracker.WebApi.csproj|solutionrelative:controllers\\jobapplicationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6AB4161F-09C8-DC9D-5F9B-E052946445C1}|JobApplicationTracker.WebApi.csproj|e:\\datacom\\jobapplicationtracker.webapi\\middleware\\globalexceptionhandlingmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6AB4161F-09C8-DC9D-5F9B-E052946445C1}|JobApplicationTracker.WebApi.csproj|solutionrelative:middleware\\globalexceptionhandlingmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6AB4161F-09C8-DC9D-5F9B-E052946445C1}|JobApplicationTracker.WebApi.csproj|e:\\datacom\\jobapplicationtracker.webapi\\dtos\\jobapplicationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6AB4161F-09C8-DC9D-5F9B-E052946445C1}|JobApplicationTracker.WebApi.csproj|solutionrelative:dtos\\jobapplicationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6AB4161F-09C8-DC9D-5F9B-E052946445C1}|JobApplicationTracker.WebApi.csproj|e:\\datacom\\jobapplicationtracker.webapi\\dtos\\errorresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6AB4161F-09C8-DC9D-5F9B-E052946445C1}|JobApplicationTracker.WebApi.csproj|solutionrelative:dtos\\errorresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{6AB4161F-09C8-DC9D-5F9B-E052946445C1}|JobApplicationTracker.WebApi.csproj|e:\\datacom\\jobapplicationtracker.webapi\\dtos\\updatejobapplicationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6AB4161F-09C8-DC9D-5F9B-E052946445C1}|JobApplicationTracker.WebApi.csproj|solutionrelative:dtos\\updatejobapplicationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6AB4161F-09C8-DC9D-5F9B-E052946445C1}|JobApplicationTracker.WebApi.csproj|e:\\datacom\\jobapplicationtracker.webapi\\controllers\\jobapplicationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6AB4161F-09C8-DC9D-5F9B-E052946445C1}|JobApplicationTracker.WebApi.csproj|solutionrelative:controllers\\jobapplicationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6AB4161F-09C8-DC9D-5F9B-E052946445C1}|JobApplicationTracker.WebApi.csproj|e:\\datacom\\jobapplicationtracker.webapi\\dtos\\jobapplicationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6AB4161F-09C8-DC9D-5F9B-E052946445C1}|JobApplicationTracker.WebApi.csproj|solutionrelative:dtos\\jobapplicationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6AB4161F-09C8-DC9D-5F9B-E052946445C1}|JobApplicationTracker.WebApi.csproj|e:\\datacom\\jobapplicationtracker.webapi\\dtos\\createjobapplicationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6AB4161F-09C8-DC9D-5F9B-E052946445C1}|JobApplicationTracker.WebApi.csproj|solutionrelative:dtos\\createjobapplicationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6AB4161F-09C8-DC9D-5F9B-E052946445C1}|JobApplicationTracker.WebApi.csproj|e:\\datacom\\jobapplicationtracker.webapi\\dtos\\errorresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6AB4161F-09C8-DC9D-5F9B-E052946445C1}|JobApplicationTracker.WebApi.csproj|solutionrelative:dtos\\errorresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6AB4161F-09C8-DC9D-5F9B-E052946445C1}|JobApplicationTracker.WebApi.csproj|e:\\datacom\\jobapplicationtracker.webapi\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -70,20 +70,20 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "CreateJobApplicationDto.cs",
               "DocumentMoniker": "E:\\Datacom\\JobApplicationTracker.WebApi\\DTOs\\CreateJobApplicationDto.cs",
               "RelativeDocumentMoniker": "DTOs\\CreateJobApplicationDto.cs",
-              "ToolTip": "E:\\Datacom\\JobApplicationTracker.WebApi\\DTOs\\CreateJobApplicationDto.cs*",
-              "RelativeToolTip": "DTOs\\CreateJobApplicationDto.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "ToolTip": "E:\\Datacom\\JobApplicationTracker.WebApi\\DTOs\\CreateJobApplicationDto.cs",
+              "RelativeToolTip": "DTOs\\CreateJobApplicationDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-16T21:06:58.709Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "JobApplicationDto.cs",
               "DocumentMoniker": "E:\\Datacom\\JobApplicationTracker.WebApi\\DTOs\\JobApplicationDto.cs",
               "RelativeDocumentMoniker": "DTOs\\JobApplicationDto.cs",
@@ -96,7 +96,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "ErrorResponseDto.cs",
               "DocumentMoniker": "E:\\Datacom\\JobApplicationTracker.WebApi\\DTOs\\ErrorResponseDto.cs",
               "RelativeDocumentMoniker": "DTOs\\ErrorResponseDto.cs",
@@ -109,7 +109,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "UpdateJobApplicationDto.cs",
               "DocumentMoniker": "E:\\Datacom\\JobApplicationTracker.WebApi\\DTOs\\UpdateJobApplicationDto.cs",
               "RelativeDocumentMoniker": "DTOs\\UpdateJobApplicationDto.cs",
@@ -128,7 +128,7 @@
               "RelativeDocumentMoniker": "Middleware\\GlobalExceptionHandlingMiddleware.cs",
               "ToolTip": "E:\\Datacom\\JobApplicationTracker.WebApi\\Middleware\\GlobalExceptionHandlingMiddleware.cs",
               "RelativeToolTip": "Middleware\\GlobalExceptionHandlingMiddleware.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAowEoAAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAAB4AAAAAAAAAAAA5wEoAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-16T21:37:33.54Z",
               "EditorCaption": ""
@@ -141,14 +141,14 @@
               "RelativeDocumentMoniker": "Service\\JobApplicationService.cs",
               "ToolTip": "E:\\Datacom\\JobApplicationTracker.WebApi\\Service\\JobApplicationService.cs",
               "RelativeToolTip": "Service\\JobApplicationService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAOAAAAAAAAAA==",
+              "ViewState": "AgIAABwAAAAAAAAAAAAqwCYAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-16T20:49:22.883Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
               "Title": "JobApplicationsController.cs",
               "DocumentMoniker": "E:\\Datacom\\JobApplicationTracker.WebApi\\Controllers\\JobApplicationsController.cs",
               "RelativeDocumentMoniker": "Controllers\\JobApplicationsController.cs",
@@ -169,8 +169,7 @@
               "RelativeToolTip": "Data\\AppDbContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-16T18:26:49.715Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-16T18:26:49.715Z"
             },
             {
               "$type": "Document",
@@ -182,8 +181,7 @@
               "RelativeToolTip": "Repository\\JobApplicationRepository.cs",
               "ViewState": "AgIAABMAAAAAAAAAAAAIwBkAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-16T20:39:13.731Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-16T20:39:13.731Z"
             },
             {
               "$type": "Document",
@@ -195,8 +193,7 @@
               "RelativeToolTip": "Repository\\IJobApplicationRepository.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAAAAAAYAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-16T20:39:01.057Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-16T20:39:01.057Z"
             },
             {
               "$type": "Document",
@@ -208,8 +205,7 @@
               "RelativeToolTip": "Service\\IJobApplicationService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-16T20:49:39.66Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-16T20:49:39.66Z"
             },
             {
               "$type": "Document",
@@ -221,8 +217,7 @@
               "RelativeToolTip": "Migrations\\20260116195843_Initial.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-16T19:58:55.148Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-16T19:58:55.148Z"
             },
             {
               "$type": "Document",
@@ -234,21 +229,19 @@
               "RelativeToolTip": "appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-01-16T18:32:53.298Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-16T18:32:53.298Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 13,
-              "Title": "JobApplicationTracker.WebApi",
+              "Title": "JobApplicationTracker.WebApi.csproj",
               "DocumentMoniker": "E:\\Datacom\\JobApplicationTracker.WebApi\\JobApplicationTracker.WebApi.csproj",
               "RelativeDocumentMoniker": "JobApplicationTracker.WebApi.csproj",
               "ToolTip": "E:\\Datacom\\JobApplicationTracker.WebApi\\JobApplicationTracker.WebApi.csproj",
               "RelativeToolTip": "JobApplicationTracker.WebApi.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-01-16T18:25:35.082Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-16T18:25:35.082Z"
             }
           ]
         }
