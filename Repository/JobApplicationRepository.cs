@@ -22,7 +22,7 @@ namespace JobApplicationTracker.WebApi.Repository
         {
             var totalCount = await _context.JobApplications.CountAsync();
             var items = await _context.JobApplications
-                .OrderByDescending(ja => ja.CreatedAt)
+                .OrderByDescending(ja => ja.DateApplied)
                 .Skip((pageNumber - 1) * pageSize)
                 .Take(pageSize)
                 .ToListAsync();
