@@ -7,6 +7,6 @@ namespace JobApplicationTracker.WebApi.Data
     {
         public AppDbContext(DbContextOptions<AppDbContext> options): base(options) { }
 
-        public DbSet<JobApplication> JobApplications { get; set; }
+        public DbSet<JobApplication> JobApplications => Set<JobApplication>();
     }
 }

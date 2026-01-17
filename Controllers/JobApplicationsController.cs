@@ -17,8 +17,16 @@ namespace JobApplicationTracker.WebApi.Controllers
 
         // GET: api/job-applications
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<JobApplicationDto>>> GetJobApplications()
+        public async Task<ActionResult> GetJobApplications([FromQuery] int? pageNumber, [FromQuery] int? pageSize)
         {
+            // If pagination parameters are provided, return paginated results
+            if (pageNumber.HasValue && pageSize.HasValue)
+            {
+                var pagedResult = await _service.GetAllJobApplicationsPagedAsync(pageNumber.Value, pageSize.Value);
+                return Ok(pagedResult);
+            }
+
+            // Otherwise, return all results
             var jobApplications = await _service.GetAllJobApplicationsAsync();
             return Ok(jobApplications);
         }

@@ -19,6 +19,32 @@ namespace JobApplicationTracker.WebApi.Service
             return jobApplications.Select(MapToDto);
         }
 
+        public async Task<PagedResponseDto<JobApplicationDto>> GetAllJobApplicationsPagedAsync(int pageNumber, int pageSize)
+        {
+            if (pageNumber < 1)
+            {
+                throw new ArgumentException("Page number must be greater than 0.", nameof(pageNumber));
+            }
+
+            if (pageSize < 1)
+            {
+                throw new ArgumentException("Page size must be greater than 0.", nameof(pageSize));
+            }
+
+            var (items, totalCount) = await _repository.GetAllPagedAsync(pageNumber, pageSize);
+            var totalPages = (int)Math.Ceiling(totalCount / (double)pageSize);
+
+            var data = items.Select(MapToDto);
+
+            return new PagedResponseDto<JobApplicationDto>(
+                Data: data,
+                PageNumber: pageNumber,
+                PageSize: pageSize,
+                TotalCount: totalCount,
+                TotalPages: totalPages
+            );
+        }
+
         public async Task<JobApplicationDto?> GetJobApplicationByIdAsync(int id)
         {
             var jobApplication = await _repository.GetByIdAsync(id);

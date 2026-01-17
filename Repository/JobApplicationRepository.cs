@@ -18,6 +18,18 @@ namespace JobApplicationTracker.WebApi.Repository
             return await _context.JobApplications.ToListAsync();
         }
 
+        public async Task<(IEnumerable<JobApplication> Items, int TotalCount)> GetAllPagedAsync(int pageNumber, int pageSize)
+        {
+            var totalCount = await _context.JobApplications.CountAsync();
+            var items = await _context.JobApplications
+                .OrderByDescending(ja => ja.CreatedAt)
+                .Skip((pageNumber - 1) * pageSize)
+                .Take(pageSize)
+                .ToListAsync();
+            
+            return (items, totalCount);
+        }
+
         public async Task<JobApplication?> GetByIdAsync(int id)
         {
             return await _context.JobApplications.FindAsync(id);
