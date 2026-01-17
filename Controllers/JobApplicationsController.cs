@@ -4,7 +4,7 @@ using JobApplicationTracker.WebApi.Service;
 
 namespace JobApplicationTracker.WebApi.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/job-applications")]
     [ApiController]
     public class JobApplicationsController : ControllerBase
     {
@@ -15,7 +15,7 @@ namespace JobApplicationTracker.WebApi.Controllers
             _service = service;
         }
 
-        // GET: api/JobApplications
+        // GET: api/job-applications
         [HttpGet]
         public async Task<ActionResult<IEnumerable<JobApplicationDto>>> GetJobApplications()
         {
@@ -23,7 +23,7 @@ namespace JobApplicationTracker.WebApi.Controllers
             return Ok(jobApplications);
         }
 
-        // GET: api/JobApplications/5
+        // GET: api/job-applications/5
         [HttpGet("{id}")]
         public async Task<ActionResult<JobApplicationDto>> GetJobApplication(int id)
         {
@@ -37,7 +37,7 @@ namespace JobApplicationTracker.WebApi.Controllers
             return jobApplication;
         }
 
-        // PUT: api/JobApplications/5
+        // PUT: api/job-applications/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
         public async Task<IActionResult> PutJobApplication(int id, UpdateJobApplicationDto updateDto)
@@ -51,7 +51,7 @@ namespace JobApplicationTracker.WebApi.Controllers
             return NoContent();
         }
 
-        // POST: api/JobApplications
+        // POST: api/job-applications
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
         public async Task<ActionResult<JobApplicationDto>> PostJobApplication(CreateJobApplicationDto createDto)
@@ -65,7 +65,7 @@ namespace JobApplicationTracker.WebApi.Controllers
             return CreatedAtAction("GetJobApplication", new { id = created.Id }, created);
         }
 
-        // DELETE: api/JobApplications/5
+        // DELETE: api/job-applications/5
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteJobApplication(int id)
         {
@@ -78,7 +78,7 @@ namespace JobApplicationTracker.WebApi.Controllers
             return NoContent();
         }
 
-        // GET: api/JobApplications/test-exception
+        // GET: api/job-applications/test-exception
         // This endpoint is for testing the global exception handler
         [HttpGet("test-exception")]
         public IActionResult TestException()
