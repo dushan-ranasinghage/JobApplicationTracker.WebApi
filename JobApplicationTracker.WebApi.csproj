@@ -25,4 +25,12 @@
     <PackageReference Include="Microsoft.OpenApi" Version="2.3.0" />
   </ItemGroup>
 
+  <!-- These exclusions prevent the test project from being compiled into the main web API project. -->
+  <ItemGroup>
+    <Compile Remove="JobApplicationTracker.WebApi.Tests/**" />
+    <Content Remove="JobApplicationTracker.WebApi.Tests/**" />
+    <EmbeddedResource Remove="JobApplicationTracker.WebApi.Tests/**" />
+    <None Remove="JobApplicationTracker.WebApi.Tests/**" />
+  </ItemGroup>
+
 </Project>
